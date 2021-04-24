@@ -1,0 +1,188 @@
+@font-face {
+    font-family: kumbh_sansbold;
+    src: url(./font/Kumbh_Sans/KumbhSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: inter;
+    src: url(./font/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+body {
+    background: black; 
+    font-family: inter;
+    border-radius: 20%;
+    font-weight: 700;
+}
+.wrapper {
+    background-image: linear-gradient(to bottom right,purple, blue);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 30px;
+}
+h2 {
+    text-align: center;
+    color: rgb(241, 237, 237);
+    font-weight:bolder;
+    font-size: 1.5rem;
+    padding: 15px; 
+    margin-bottom: 0;
+    justify-content: space-between;
+    border-radius: 30px;
+}
+form{
+    font-family: kumbh_sansbold;
+}
+
+div.input-box{
+    padding-bottom: 10px;
+}
+
+h4 {
+    text-transform: uppercase;
+    color: rgb(241, 237, 237);
+    margin-bottom: 3px;
+    position: relative;
+    padding-top: 20px;
+}
+form input {
+    border-style: outset;
+    border-radius: 10px;
+    outline: none;
+    position: relative;
+}
+.input-box {
+    margin-bottom: 0.8rem;
+}
+
+form .input-group .input-box i{
+    position: relative;
+}
+
+form .input-group .input-box .name {
+    width: 75%;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+}
+.icon {
+    padding: 10px;
+    min-width: 40px;
+    text-align: center;
+
+}
+input[type="tel"]{
+    width: 75%;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    outline: none;    
+}
+
+i[class="fa fa-envelope"] {
+    left: 22px;
+    top:8px;
+}
+
+
+
+.dob{
+    width: 23%;
+    padding: 9px;
+    margin: 1px;
+}
+
+
+button[type="submit"]{
+    width: 80%;
+    background-image: linear-gradient(to right,blue, rgb(178, 27, 192));
+    color: rgb(241, 237, 237);
+    font-weight: bolder;
+    font-size: 1rem;
+    padding: 8px;
+    border-radius: 80px;
+    margin: 20px;
+}
+
+select{
+    width: 120px;
+    margin: 3px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+div .input-box .radio{
+    margin: 3px 10px 0px;
+}
+label{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 300px) {
+    div .input-box .radio{
+        margin: 8px;
+        display: flex;
+        flex-direction: column;
+    }
+    .dob{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .wrapper {
+        padding: 25px 25px;
+        margin: 20px 15px;
+    }
+    select{
+        width: 43%;
+        padding: 10px;
+    }
+    div .input-box .radio{
+        margin: 25px;
+    }
+
+}
+
+@media only screen and (min-width: 992px){
+    .wrapper {
+        padding: 40px 200px;
+        margin: 50px 15px;
+    }
+
+    form .input-group .input-box .name {
+        width: 500px;
+    }
+
+    input[type="tel"]{
+        width: 500px;        
+    }
+
+    .dob{
+        width: 136px;
+        margin: 2.5px;
+    }
+
+    select{
+        width: 243px;
+        margin: 3px;
+    }
+    div .input-box .radio{
+        margin: 18px;
+    }
+    button[type="submit"]{
+        width: 400px;
+        padding: 10px;
+        border-radius: 90px;
+        margin: 20px;
+    }
+    
+}
+
+@media only screen and (min-width: 1200px){
+    .wrapper {
+        padding: 40px 400px;
+    }
+}
